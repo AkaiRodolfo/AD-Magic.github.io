@@ -225,9 +225,17 @@ span{
 }
 /*:::FIN DE BOTONES:::*/
 
-@media(max-width:991px){
+@media (max-width: 480px) {
+    body {
+        background-image: url(images/Fondo\ Servicio.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     .menu{
-        padding: 20px;
+        padding: 30px;
+        padding-top: 10px;
     }
     .menu label{
         display: inline;
@@ -252,23 +260,74 @@ span{
         display: inline;
     }
 
-    .logo{
-        display: none;
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
     }
 
-    .header{
-        min-height: 0vh;
-        background-position: 0 0;
-        background-size: 1000px 1100px;
+    .menu {
+        padding: 10px;
     }
 
-    .header-content{
-        padding: 50px 0;
-        flex-direction: column;
+    .menu .logo {
+        font-size: 20px;
     }
 
-    .header-txt h1{
-        font-size: 70px;
+    .menu .navbar ul li a {
+        font-size: 16px;
+        padding: 10px;
     }
 
+    .titulo {
+        padding: 20px 10px;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .catalogo-container {
+        padding: 50px 10px;
+    }
+
+    .catalogo-principal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .catalogo-principal img {
+        width: 100%;
+        max-width: 200px;
+        margin: 0;
+    }
+
+    .catalogo-1,
+    .catalogo-2,
+    .catalogo-3,
+    .catalogo-4 {
+        padding: 10px;
+    }
+
+    .catalogo-1 h3,
+    .catalogo-2 h3,
+    .catalogo-3 h3,
+    .catalogo-4 h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .catalogo-1 p,
+    .catalogo-2 p,
+    .catalogo-3 p,
+    .catalogo-4 p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .btn-2 {
+        display: block;
+        margin: 15px auto;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
