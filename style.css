@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
     /*
     font-family: 'Oswald', sans-serif;
@@ -99,17 +99,18 @@
 
     .header-txt{
         flex-basis: 10%;
-        padding-top: 10px;
+        padding-top: 60px;
         padding-left: 20px;
         text-align: center;
     }
 
     .header-txt h1{
-        font-size: 90px;
+        padding-top: 0px;
+        font-size: 60px;
         text-transform: uppercase;
         line-height: 1;
         color: #ececec;
-        font-family: "Oswald",sans-serif;
+        font-family: "Poppins",sans-serif;
         margin-bottom: 15px;
     }
 
@@ -215,9 +216,10 @@
 
 
     @media(max-width:991px){
+        
         .menu{
-            padding: 20px;
-            padding-top: 1px;
+            padding: 30px;
+            padding-top: 10px;
         }
         .menu label{
             display: inline;
@@ -242,27 +244,46 @@
             display: inline;
         }
 
-        .logo{
-            display: none;
-        }
-
         .header{
             min-height: 0vh;
-            background-position: 0 0;
+            background-position:center;
             background-size: 1000px 1100px;
             overflow-x: hidden;
             width: 120%;
-            background-image: 100%;
+            background-image: 100px;
+        }
+
+        .header-txt{
+            background-position: center;
+        
         }
 
         .header-content{
             padding: 50px 0;
             flex-direction: column;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        .header-img{
+            background-position: center;
+            width: 100px;
+            height: 100px;
+            padding-left: 30px;
         }
 
         .header-txt h1{
-            font-size: 70px;
+            font-size: 40px;
+            padding-left: 0;
+            padding-right: 90px;
         }
+
+        .header-txt p{
+            font-size: 20px;
+            padding-left: 0;
+            padding-right: 90px;
+        }
+
         .boton-modal{
             min-height: 0vh;
             
