@@ -179,9 +179,6 @@ svg circle {
         display: inline;
     }
 
-    .logo{
-        display: none;
-    }
 
     .header{
         min-height: 0vh;
