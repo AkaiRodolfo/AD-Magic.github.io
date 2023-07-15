@@ -10,9 +10,10 @@
 
 }
 body{
-    background-size: 100%;
+    background-size: 110%;
     background-image: url(images/Fondo\ Nosotros.jpg);
     background-position:100% ;
+    background-repeat: no-repeat;
 }
 
 /*:::menu de arriba:::*/
@@ -117,7 +118,15 @@ header{
     justify-content: justify;
 }
 
-@media(max-width:991px){
+@media(max-width:480px){
+
+    body {
+        background-image: url(images/Fondo\ Servicio.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     .menu{
         padding: 20px;
     }
@@ -144,26 +153,14 @@ header{
         display: inline;
     }
 
-    .logo{
-        display: none;
+    .catalogo-principal{
+        background-position: center;
     }
 
-    .header{
-        min-height: 0vh;
-        background-position: 0 0;
-        background-size: 1000px 1100px;
+    .catalogo-1{
+        font-size: 50px;
+        padding-left: 0;
+        padding-right: 0px;
     }
-
-    .header-content{
-        padding: 50px 0;
-        flex-direction: column;
-    }
-
-    .header-txt h1{
-        font-size: 70px;
-    }
-    .boton-modal{
-        min-height: 0vh;
-        
-    }
+    
 }
